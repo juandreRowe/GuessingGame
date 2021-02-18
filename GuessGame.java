@@ -13,8 +13,8 @@ import java.util.Scanner;
  */
 public class GuessGame {
     private final int numberToGuess;
-    private final int max;
-    private final int min;
+    private final int max; //Top boundry
+    private final int min; //Bottom boundry
     private int numberOfGuesses;
     private final Player player;
     
@@ -49,7 +49,7 @@ public class GuessGame {
     }
     
     public void incrementGuess(){
-        numberOfGuesses += 1;
+        numberOfGuesses++;
     }
     
     public void play(){

@@ -17,8 +17,8 @@ public class JavaApplication16 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //Player player = new Player(getPlayerName());
-        GuessGame game = new GuessGame();
+        Player player = new Player(getPlayerName());
+        GuessGame game = new GuessGame(100, 200, player);
         game.play();
     }
     
